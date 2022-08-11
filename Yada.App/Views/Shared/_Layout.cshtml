@@ -30,6 +30,14 @@
     </header>
     <div class="container">
         <main role="main" class="pb-3">
+            @if (TempData["Message"] != null)
+            {
+                string alert = (TempData["MessageType"] != null) ? (string)TempData["MessageType"] : "alert-info";
+                <div class="alert @alert alert-dismissible fade show" role="alert">
+                    @TempData["Message"]
+  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+            }
             @RenderBody()
         </main>
     </div>

@@ -1,6 +1,6 @@
 namespace Yada.Admin.Controllers;
 
-public class AppController : Controller
+public class AppController : BaseController
 {
     private readonly AppSettings _settings;
     private ILogger<AppController> _logger { get; set; }
@@ -13,6 +13,7 @@ public class AppController : Controller
 
     public ActionResult Index()
     {
+        AddMessage("Error");
         return View();
     }
 

@@ -1,8 +1,4 @@
-using System.Diagnostics;
-using Microsoft.AspNetCore.Mvc;
-using Yada.Models;
-
-namespace Test.Controllers;
+namespace Yada.Controllers;
 
 public class HomeController : Controller
 {
