@@ -1,5 +1,7 @@
 global using Microsoft.AspNetCore.Mvc;
 global using Microsoft.Extensions.Options;
+global using Serilog;
+global using Yada.App.Configuration;
 global using Yada.Business;
 global using Yada.Core.Configuration;
 global using Yada.Core.Enums;
