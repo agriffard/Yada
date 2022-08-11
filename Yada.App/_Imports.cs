@@ -1,4 +1,5 @@
 global using Microsoft.AspNetCore.Mvc;
+global using Microsoft.Extensions.Options;
 global using Yada.Business;
 global using Yada.Core.Configuration;
 global using Yada.Core.Enums;
