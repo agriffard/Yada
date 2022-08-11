@@ -13,7 +13,6 @@ public class AppController : BaseController
 
     public ActionResult Index()
     {
-        AddMessage("Error");
         return View();
     }
 
