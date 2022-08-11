@@ -1,7 +1,10 @@
+using Yada.Core.Configuration;
+
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllersWithViews();
 
+builder.Services.Configure<AppSettings>(builder.Configuration.GetSection(nameof(AppSettings)));
 builder.Services.AddBusinessServices();
 builder.Services.AddDataRepositories();
 builder.Services.AddScoped<YadaContext>();
