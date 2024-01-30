@@ -1,7 +1,3 @@
-using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Configuration;
-using Yada.Core.Constants;
-
 namespace Yada.Data.Context;
 
 public partial class YadaContext : DbContext
